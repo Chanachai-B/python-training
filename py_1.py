@@ -1,9 +1,17 @@
 # 1
-PMAX_member = [ "anuwat sagulmontreechai",
-                "rattanaporn changwong","jakarin akrin","phasit sritonchai","rattanaporn akkasri"
-                "chayutra chantachote","nattaphong pannengpet","nattanon moontip","kitsakron sophawan","sangnapha akrin",
-                "phakawat bootnampetch","kunlanat damang","chaowarin anusornprasert","chanachai baisaen"]
-# print(PMAX_member)
+PMAX_member = ["jakarin akrin","phasit sritonchai","prakrapong pongpang","chayutra chantachote","nattaphong pannengpet",
+"nattanon moontip","kitsakron sophawan","sangnapha akrin"]
+
+PMAX_member.remove("prakrapong pongpang")
+PMAX_member.insert(0,"anuwat sagulmontreechai")
+PMAX_member.insert(1,"rattanaporn changwong")
+PMAX_member.insert(4,"rattanaporn akkasri")
+
+PMAX_new_member = ["phakawat bootnampetch","kunlanat damang","chaowarin anusornprasert","chanachai baisaen"]
+
+PMAX_member = PMAX_member + PMAX_new_member
+
+print(PMAX_member)
 
 # 2
 PMAX_member_sort = sorted(PMAX_member)
